@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h3>UI/UX Learning Platform</h3>
+            <div class="nav-links">
+                <a href="#" id="homeLink">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <div id="welcomeSection" class="welcome-section">
+            <h1>Learn UI/UX Design</h1>
+            <p>A curated collection of free resources to master UI/UX design. Choose your level and start learning at your own pace.</p>
+        
+            <!-- Levels Section -->
+            <div id="levelsSection">
+                <div class="levels-grid">
+                    <div class="level-card" data-level="beginner">
+                        <h3>Beginner</h3>
+                        <p>Start your UI/UX journey here</p>
+                    </div>
+                    <div class="level-card" data-level="intermediate">
+                        <h3>Intermediate</h3>
+                        <p>Enhance your skills</p>
+                    </div>
+                    <div class="level-card" data-level="advanced">
+                        <h3>Advanced</h3>
+                        <p>Master UI/UX design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapters Section -->
+        <div id="chaptersSection" class="hidden">
+            <a href="#" class="back-button" id="backToLevels">← Back to Levels</a>
+            <h2 id="levelTitle">Level Chapters</h2>
+            <div class="chapter-list" id="chapterList">
+                <!-- Chapters will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Resources Section -->
+        <div id="resourcesSection" class="hidden">
+            <a href="#" class="back-button" id="backToChapters">← Back to Chapters</a>
+            <div class="resource-header">
+                <h2 id="chapterTitle">Chapter Resources</h2>
+                <div class="completion-status"></div>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab active" data-type="video">Videos</button>
+                <button class="tab" data-type="article">Articles</button>
+            </div>
+            
+            <div class="resource-list" id="resourceList">
+                <!-- Resources will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Template for Video Card -->
+    <template id="videoCardTemplate">
+        <div class="resource-card">
+            <div class="video-thumbnail">
+                <img src="" alt="">
+            </div>
+            <div class="resource-content">
+                <h3 class="resource-title"></h3>
+                <p class="resource-description"></p>
+                <div class="resource-meta">
+                    <span class="resource-author"></span>
+                </div>
+                <div class="resource-actions">
+                    <div class="resource-checkbox-wrapper">
+                        <input type="checkbox">
+                        <label>Mark as complete</label>
+                    </div>
+                    <a href="" class="view-link" target="_blank">Watch Video</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Template for Article Card -->
+    <template id="articleCardTemplate">
+        <div class="resource-card">
+            <div class="article-thumbnail">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                </svg>
+            </div>
+            <div class="resource-content">
+                <h3 class="resource-title"></h3>
+                <p class="resource-description"></p>
+                <div class="resource-meta">
+                    <span class="resource-author"></span>
+                    <span>•</span>
+                    <span class="resource-publisher"></span>
+                </div>
+                <div class="resource-actions">
+                    <div class="resource-checkbox-wrapper">
+                        <input type="checkbox">
+                        <label>Mark as complete</label>
+                    </div>
+                    <a href="" class="view-link" target="_blank">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
