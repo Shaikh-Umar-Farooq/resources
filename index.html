@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,59 +12,207 @@
             <h3>UI/UX Learning Platform</h3>
             <div class="nav-links">
                 <a href="#" id="homeLink">Home</a>
+                <span id="userSection" class="hidden">
+                    <span id="userEmail" class="user-email"></span>
+                    <a href="#" id="logoutBtn">Logout</a>
+                </span>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Welcome Section -->
-        <div id="welcomeSection" class="welcome-section">
-            <h1>Learn UI/UX Design</h1>
-            <p>A curated collection of free resources to master UI/UX design. Choose your level and start learning at your own pace.</p>
-        
-            <!-- Levels Section -->
-            <div id="levelsSection">
-                <div class="levels-grid">
-                    <div class="level-card" data-level="beginner">
-                        <h3>Beginner</h3>
-                        <p>Start your UI/UX journey here</p>
-                    </div>
-                    <div class="level-card" data-level="intermediate">
-                        <h3>Intermediate</h3>
-                        <p>Enhance your skills</p>
-                    </div>
-                    <div class="level-card" data-level="advanced">
-                        <h3>Advanced</h3>
-                        <p>Master UI/UX design</p>
-                    </div>
+    <div id="authSection" class="auth-section">
+        <div class="auth-container">
+            <h2>Welcome</h2>
+            <p>Sign in to track your learning progress</p>
+            
+            <div class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="auth-error" id="authError"></div>
+                <button id="loginBtn" class="auth-button">Login</button>
+                <button id="signupBtn" class="auth-button secondary">Create Account</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <h3>UI/UX Learning Platform</h3>
+            <div class="nav-links">
+                <a href="#" id="homeLink">Home</a>
+                <div id="authButtons" class="auth-buttons">
+                    <button id="showLoginBtn">Login</button>
+                    <button id="showSignupBtn" class="primary">Get Started</button>
+                </div>
+                <span id="userSection" class="hidden">
+                    <span id="welcomeUser" class="welcome-user"></span>
+                    <a href="#" id="logoutBtn">Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <div id="landingPage" class="landing-page">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Master UI/UX Design</h1>
+                <p class="hero-text">Learn UI/UX design from basics to advanced concepts with our curated collection of free resources. Track your progress and build your skills at your own pace.</p>
+                <div class="cta-buttons">
+                    <button id="landingGetStarted" class="cta-button primary">Get Started</button>
+                    <button id="landingLearnMore" class="cta-button secondary">Learn More</button>
                 </div>
             </div>
         </div>
 
-        <!-- Chapters Section -->
-        <div id="chaptersSection" class="hidden">
-            <a href="#" class="back-button" id="backToLevels">← Back to Levels</a>
-            <h2 id="levelTitle">Level Chapters</h2>
-            <div class="chapter-list" id="chapterList">
-                <!-- Chapters will be dynamically added here -->
+        <div class="features-section">
+            <h2>Why Choose Our Platform?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Curated Content</h3>
+                    <p>Handpicked resources from industry experts and leading platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your learning journey with detailed progress tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Structured Learning</h3>
+                    <p>Well-organized content from beginner to advanced levels.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Free Resources</h3>
+                    <p>Access quality content without any cost.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Section -->
+    <div id="authSection" class="auth-section hidden">
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-container">
+            <h2>Welcome Back</h2>
+            <p>Sign in to continue your learning journey</p>
+            
+            <div class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                </div>
+                <div class="auth-error" id="loginError"></div>
+                <button id="loginBtn" class="auth-button">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignup">Create Account</a></p>
             </div>
         </div>
 
-        <!-- Resources Section -->
-        <div id="resourcesSection" class="hidden">
-            <a href="#" class="back-button" id="backToChapters">← Back to Chapters</a>
-            <div class="resource-header">
-                <h2 id="chapterTitle">Chapter Resources</h2>
-                <div class="completion-status"></div>
-            </div>
+        <!-- Signup Form -->
+        <div id="signupForm" class="auth-container hidden">
+            <h2>Create Account</h2>
+            <p>Join our learning platform</p>
             
-            <div class="tabs">
-                <button class="tab active" data-type="video">Videos</button>
-                <button class="tab" data-type="article">Articles</button>
+            <div class="auth-form">
+                <div class="form-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" placeholder="Choose a username">
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                </div>
+                <div class="auth-error" id="signupError"></div>
+                <button id="signupBtn" class="auth-button">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
             </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Main Content (Original content) -->
+    <div id="mainContent" class="hidden">
+        <div class="container">
+            <!-- Welcome Section -->
+            <div id="welcomeSection" class="welcome-section">
+                <h1>Learn UI/UX Design</h1>
+                <p>A curated collection of free resources to master UI/UX design. Choose your level and start learning at your own pace.</p>
             
-            <div class="resource-list" id="resourceList">
-                <!-- Resources will be dynamically added here -->
+                <!-- Levels Section -->
+                <div id="levelsSection">
+                    <div class="levels-grid">
+                        <div class="level-card" data-level="beginner">
+                            <h3>Beginner</h3>
+                            <p>Start your UI/UX journey here</p>
+                        </div>
+                        <div class="level-card" data-level="intermediate">
+                            <h3>Intermediate</h3>
+                            <p>Enhance your skills</p>
+                        </div>
+                        <div class="level-card" data-level="advanced">
+                            <h3>Advanced</h3>
+                            <p>Master UI/UX design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapters Section -->
+            <div id="chaptersSection" class="hidden">
+                <a href="#" class="back-button" id="backToLevels">← Back to Levels</a>
+                <h2 id="levelTitle">Level Chapters</h2>
+                <div class="chapter-list" id="chapterList">
+                    <!-- Chapters will be dynamically added here -->
+                </div>
+            </div>
+
+            <!-- Resources Section -->
+            <div id="resourcesSection" class="hidden">
+                <a href="#" class="back-button" id="backToChapters">← Back to Chapters</a>
+                <div class="resource-header">
+                    <h2 id="chapterTitle">Chapter Resources</h2>
+                    <div class="completion-status"></div>
+                </div>
+                
+                <div class="tabs">
+                    <button class="tab active" data-type="video">Videos</button>
+                    <button class="tab" data-type="article">Articles</button>
+                </div>
+                
+                <div class="resource-list" id="resourceList">
+                    <!-- Resources will be dynamically added here -->
+                </div>
             </div>
         </div>
     </div>
@@ -118,6 +266,28 @@
             </div>
         </div>
     </template>
+    
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Initialize Firebase -->
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCySRX5APm5CzmRZpBwEA6yvWixVEpu6Yo",
+  authDomain: "learn-with-shaikh.firebaseapp.com",
+  projectId: "learn-with-shaikh",
+  storageBucket: "learn-with-shaikh.firebasestorage.app",
+  messagingSenderId: "814508590017",
+  appId: "1:814508590017:web:0155313742d10bfd10e540",
+  measurementId: "G-JQY8PM4CFP"
+};
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
     <script src="data.js"></script>
     <script src="script.js"></script>

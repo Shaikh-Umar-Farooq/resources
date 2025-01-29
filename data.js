@@ -3,6 +3,39 @@ const courseData = {
         title: "Beginner Level",
         chapters: [
             {
+                title: "Design Principles",
+                resources: [
+                    {
+                        type: "video",
+                        title: "Beginning Graphic Design: Fundamentals",
+                        description: "Learn about the fundamental principles of design including typography, colors, shapes, and more.",
+                        url: "https://www.youtube.com/watch?v=YqQx75OPRa0",
+                        thumbnail: "https://img.youtube.com/vi/YqQx75OPRa0/maxresdefault.jpg",
+                        author: "GCFLearnFree",
+                        completed: false
+                    },
+                    {
+                        type: "video",
+                        title: "Gestalt Psychology and Web Design",
+                        description: "Understanding how human perception works and how to apply Gestalt principles to your designs.",
+                        url: "https://www.youtube.com/watch?v=JLQ2UAdf2eQ",
+                        thumbnail: "https://img.youtube.com/vi/JLQ2UAdf2eQ/maxresdefault.jpg",
+                        author: "UX Foundations",
+                        completed: false
+                    },
+                    {
+                        type: "article",
+                        title: "Color Theory for Designers",
+                        description: "Learn how to use color effectively in your designs with this comprehensive guide to color theory.",
+                        url: "https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/",
+                        author: "Cameron Chapman",
+                        publisher: "Smashing Magazine",
+                        completed: false
+                    }
+                ]
+            },
+            
+            {
                 title: "Introduction to UI/UX",
                 resources: [
                     {
@@ -42,39 +75,8 @@ const courseData = {
                         completed: false
                     }
                 ]
-            },
-            {
-                title: "Design Principles",
-                resources: [
-                    {
-                        type: "video",
-                        title: "Beginning Graphic Design: Fundamentals",
-                        description: "Learn about the fundamental principles of design including typography, colors, shapes, and more.",
-                        url: "https://www.youtube.com/watch?v=YqQx75OPRa0",
-                        thumbnail: "https://img.youtube.com/vi/YqQx75OPRa0/maxresdefault.jpg",
-                        author: "GCFLearnFree",
-                        completed: false
-                    },
-                    {
-                        type: "video",
-                        title: "Gestalt Psychology and Web Design",
-                        description: "Understanding how human perception works and how to apply Gestalt principles to your designs.",
-                        url: "https://www.youtube.com/watch?v=JLQ2UAdf2eQ",
-                        thumbnail: "https://img.youtube.com/vi/JLQ2UAdf2eQ/maxresdefault.jpg",
-                        author: "UX Foundations",
-                        completed: false
-                    },
-                    {
-                        type: "article",
-                        title: "Color Theory for Designers",
-                        description: "Learn how to use color effectively in your designs with this comprehensive guide to color theory.",
-                        url: "https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/",
-                        author: "Cameron Chapman",
-                        publisher: "Smashing Magazine",
-                        completed: false
-                    }
-                ]
             }
+
         ]
     },
     intermediate: {
