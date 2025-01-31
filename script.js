@@ -450,8 +450,6 @@ function showResourcesByType(chapter, type) {
                     <p class="resource-description">${resource.description}</p>
                     <div class="resource-meta">
                         <span class="resource-author">By ${resource.author}</span>
-                        <span>•</span>
-                        <span>${resource.publisher}</span>
                     </div>
                     <div class="resource-actions">
                         <div class="resource-checkbox-wrapper">
@@ -496,6 +494,7 @@ document.getElementById('backToLevels').addEventListener('click', (e) => {
 
 document.getElementById('backToChapters').addEventListener('click', (e) => {
     e.preventDefault();
+    updateAllProgress();
     resourcesSection.classList.add('hidden');
     chaptersSection.classList.remove('hidden');
     updateAllProgress(); // Update progress when returning to chapters

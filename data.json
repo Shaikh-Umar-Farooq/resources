@@ -1,6 +1,6 @@
-const courseData = {
-    beginner: {
-        title: "Beginner Level",
+{
+    "beginner": {
+        "title": "Beginner Level",
         "chapters": [
             {
                 "title": "Introduction to User Experience\n\t\t\t\t\tDesign",
@@ -999,8 +999,8 @@ const courseData = {
             }
         ]
     },
-    intermediate: {
-        title: "Intermediate Level",
+    "intermediate": {
+        "title": "Intermediate Level",
         "chapters": [
             {
               "title": "User Research",
@@ -2126,8 +2126,8 @@ const courseData = {
             }
           ]
     },
-    advanced: {
-        title: "Advanced Level",
+    "advanced": {
+        "title": "Advanced Level",
         "chapters": [
     {
       "title": "Accessible Design",
@@ -3257,4 +3257,4 @@ const courseData = {
     }
   ]
     }
-};
+}

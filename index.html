@@ -1,47 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Learning Platform</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <div class="nav-content">
-            <h3>UI/UX Learning Platform</h3>
-            <div class="nav-links">
-                <a href="#" id="homeLink">Home</a>
-                <span id="userSection" class="hidden">
-                    <span id="userEmail" class="user-email"></span>
-                    <a href="#" id="logoutBtn">Logout</a>
-                </span>
-            </div>
-        </div>
-    </nav>
-
-    <div id="authSection" class="auth-section">
-        <div class="auth-container">
-            <h2>Welcome</h2>
-            <p>Sign in to track your learning progress</p>
-            
-            <div class="auth-form">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password">
-                </div>
-                <div class="auth-error" id="authError"></div>
-                <button id="loginBtn" class="auth-button">Login</button>
-                <button id="signupBtn" class="auth-button secondary">Create Account</button>
-            </div>
-        </div>
-    </div> -->
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,11 +17,12 @@
 </script>
 <body>
     <!-- Navigation -->
+     <div id = "home">
     <nav>
         <div class="nav-content">
-            <h3>UI/UX Learning Platform</h3>
+            <h3>UI/UX Design</h3>
             <div class="nav-links">
-                <a href="#" id="homeLink">Home</a>
+                <a href="#" id="homeLink"></a>
                 <div id="authButtons" class="auth-buttons">
                     <button id="showLoginBtn">Login</button>
                     <button id="showSignupBtn" class="primary">Get Started</button>
@@ -81,42 +39,41 @@
     <div id="landingPage" class="landing-page">
         <div class="hero-section">
             <div class="hero-content">
-                <h1>Master UI/UX Design</h1>
-                <p class="hero-text">Learn UI/UX design from basics to advanced concepts with our curated collection of free resources. Track your progress and build your skills at your own pace.</p>
+                <h1>Master UI/UX Design for Free</h1>
+                <h2>Zero Excuses, Just Skills </h2>
+                <p class="hero-text">Tired of sifting through pricey courses? I dumped everything you need to crush UI/UX design into one spot <b>100% free.</b> Start with the basics, level up to pro tricks, and track your progress. Videos, articles, and a shiny progress tracker? Yep, I got you.<BR> Stop wasting time (and cash)—your dream portfolio starts here.</p>
                 <div class="cta-buttons">
                     <button id="landingGetStarted" class="cta-button primary">Get Started</button>
-                    <button id="landingLearnMore" class="cta-button secondary">Learn More</button>
                 </div>
             </div>
         </div>
 
-        <div class="features-section">
-            <h2>Why Choose Our Platform?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3>Curated Content</h3>
-                    <p>Handpicked resources from industry experts and leading platforms.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3>Track Progress</h3>
-                    <p>Monitor your learning journey with detailed progress tracking.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Structured Learning</h3>
-                    <p>Well-organized content from beginner to advanced levels.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3>Free Resources</h3>
-                    <p>Access quality content without any cost.</p>
-                </div>
+        <div class="summary-container">
+            <div class="summary-content">
+                <h1>3</h1>
+                <p>Levels</p>
             </div>
+            <div class="summary-content">
+                <h1>33</h1>
+                <p>Chapters</p>
+            </div>
+            <div class="summary-content">
+                <h1>147</h1>
+                <p>Videos</p>
+            </div>
+            <div class="summary-content">
+                <h1>195</h1>
+                <p>Articles</p>
         </div>
+        <div class="summary-content">
+            <h1>342</h1>
+            <p>Resources</p>
+        </div>
+
     </div>
 
+    
+</div>
     <!-- Auth Section -->
     <div id="authSection" class="auth-section hidden">
         <!-- Login Form -->
@@ -262,12 +219,10 @@
                 <p class="resource-description"></p>
                 <div class="resource-meta">
                     <span class="resource-author"></span>
-                    <span>•</span>
-                    <span class="resource-publisher"></span>
                 </div>
                 <div class="resource-actions">
                     <div class="resource-checkbox-wrapper">
-                        <input type="checkbox">
+                        <input type="checkbox" class="checkbox">
                         <label>Mark as complete</label>
                     </div>
                     <a href="" class="view-link" target="_blank">Read Article</a>
