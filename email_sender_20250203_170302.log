@@ -1,0 +1,6 @@
+2025-02-03 17:03:03,204 - INFO - Attempting to send email to: smuf7080@gmail.com (Muhammad Ilham)
+2025-02-03 17:03:10,374 - ERROR - Failed to send email to smuf7080@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-72fe6a1a74esm8040223b3a.159 - gsmtp')
+2025-02-03 17:03:30,379 - INFO - Attempting to send email to: umar@ruskmedia.com (Arezoo Sanaiefar)
+2025-02-03 17:03:37,523 - ERROR - Failed to send email to umar@ruskmedia.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-72fe631be8fsm8142753b3a.24 - gsmtp')
+2025-02-03 17:03:57,527 - WARNING - Empty email found at row 4
+2025-02-03 17:03:57,527 - INFO - Email sending completed. Successful: 0, Failed: 2

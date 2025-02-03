@@ -305,24 +305,14 @@ function updateChapterHeader(progress) {
 function showChapters(level) {
     const levelData = courseData[level];
     document.getElementById('levelTitle').textContent = levelData.title;
+    document.getElementById('level-disc').textContent = levelData.desc;
     chapterList.innerHTML = '';
 
     // Add overall level progress at the top
     const levelProgress = calculateLevelProgress(levelData);
     const levelProgressDiv = document.createElement('div');
-    levelProgressDiv.className = 'level-progress-header';
-    levelProgressDiv.innerHTML = `
-        <h3>${levelData.title} Progress</h3>
-        <div class="progress-container">
-            <div class="progress-stats">
-                <span>${levelProgress.completed}/${levelProgress.total} resources completed</span>
-                <span>${levelProgress.percentage}%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: ${levelProgress.percentage}%"></div>
-            </div>
-        </div>
-    `;
+      
+    ;
     chapterList.appendChild(levelProgressDiv);
 
     // Show chapters with their progress

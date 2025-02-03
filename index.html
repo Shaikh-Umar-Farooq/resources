@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,251 +10,259 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQY8PM4CFP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-JQY8PM4CFP');
+    gtag('config', 'G-JQY8PM4CFP');
 </script>
+
 <body>
     <!-- Navigation -->
-     <div id = "home">
-    <nav>
-        <div class="nav-content">
-            <h3>UI/UX Design</h3>
-            <div class="nav-links">
-                <a href="#" id="homeLink"></a>
-                <div id="authButtons" class="auth-buttons">
-                    <button id="showLoginBtn">Login</button>
-                    <button id="showSignupBtn" class="primary">Get Started</button>
-                </div>
-                <span id="userSection" class="hidden">
-                    <span id="welcomeUser" class="welcome-user"></span>
-                    <a href="#" id="logoutBtn">Logout</a>
-                </span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Landing Page -->
-    <div id="landingPage" class="landing-page">
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1>Master UI/UX Design for Free</h1>
-                <h2>Zero Excuses, Just Skills </h2>
-                <p class="hero-text">Tired of sifting through pricey courses? I dumped everything you need to crush UI/UX design into one spot <b>100% free.</b> Start with the basics, level up to pro tricks, and track your progress. Videos, articles, and a shiny progress tracker? Yep, I got you.<BR> Stop wasting time (and cash)—your dream portfolio starts here.</p>
-                <div class="cta-buttons">
-                    <button id="landingGetStarted" class="cta-button primary">Get Started</button>
+    <div id="home">
+        <nav>
+            <div class="nav-content">
+                <h3>UI/UX Design</h3>
+                <div class="nav-links">
+                    <a href="#" id="homeLink"></a>
+                    <div id="authButtons" class="auth-buttons">
+                        <button id="showLoginBtn">Login</button>
+                        <button id="showSignupBtn" class="primary">Get Started</button>
+                    </div>
+                    <span id="userSection" class="hidden">
+                        <span id="welcomeUser" class="welcome-user"></span>
+                        <a href="#" id="logoutBtn">Logout</a>
+                    </span>
                 </div>
             </div>
-        </div>
+        </nav>
 
-        <div class="summary-container">
-            <div class="summary-content">
-                <h1>3</h1>
-                <p>Levels</p>
-            </div>
-            <div class="summary-content">
-                <h1>33</h1>
-                <p>Chapters</p>
-            </div>
-            <div class="summary-content">
-                <h1>147</h1>
-                <p>Videos</p>
-            </div>
-            <div class="summary-content">
-                <h1>195</h1>
-                <p>Articles</p>
-        </div>
-        <div class="summary-content">
-            <h1>342</h1>
-            <p>Resources</p>
-        </div>
-
-    </div>
-
-    
-</div>
-    <!-- Auth Section -->
-    <div id="authSection" class="auth-section hidden">
-        <!-- Login Form -->
-        <div id="loginForm" class="auth-container">
-            <h2>Welcome Back</h2>
-            <p>Sign in to continue your learning journey</p>
-            
-            <div class="auth-form">
-                <div class="form-group">
-                    <label for="loginEmail">Email</label>
-                    <input type="email" id="loginEmail" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="loginPassword">Password</label>
-                    <input type="password" id="loginPassword" placeholder="Enter your password">
-                </div>
-                <div class="auth-error" id="loginError"></div>
-                <button id="loginBtn" class="auth-button">Login</button>
-                <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignup">Create Account</a></p>
-            </div>
-        </div>
-
-        <!-- Signup Form -->
-        <div id="signupForm" class="auth-container hidden">
-            <h2>Create Account</h2>
-            <p>Join our learning platform</p>
-            
-            <div class="auth-form">
-                <div class="form-group">
-                    <label for="signupUsername">Username</label>
-                    <input type="text" id="signupUsername" placeholder="Choose a username">
-                </div>
-                <div class="form-group">
-                    <label for="signupEmail">Email</label>
-                    <input type="email" id="signupEmail" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="signupPassword">Password</label>
-                    <input type="password" id="signupPassword" placeholder="Create a password">
-                </div>
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" placeholder="Confirm your password">
-                </div>
-                <div class="auth-error" id="signupError"></div>
-                <button id="signupBtn" class="auth-button">Create Account</button>
-                <p class="auth-switch">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
-            </div>
-        </div>
-    </div>
-
-    
-
-    <!-- Main Content (Original content) -->
-    <div id="mainContent" class="hidden">
-        <div class="container">
-            <!-- Welcome Section -->
-            <div id="welcomeSection" class="welcome-section">
-                <h1>Learn UI/UX Design</h1>
-                <p>A curated collection of free resources to master UI/UX design. Choose your level and start learning at your own pace.</p>
-            
-                <!-- Levels Section -->
-                <div id="levelsSection">
-                    <div class="levels-grid">
-                        <div class="level-card" data-level="beginner">
-                            <h3>Beginner</h3>
-                            <p>Start your UI/UX journey here</p>
-                        </div>
-                        <div class="level-card" data-level="intermediate">
-                            <h3>Intermediate</h3>
-                            <p>Enhance your skills</p>
-                        </div>
-                        <div class="level-card" data-level="advanced">
-                            <h3>Advanced</h3>
-                            <p>Master UI/UX design</p>
-                        </div>
+        <!-- Landing Page -->
+        <div id="landingPage" class="landing-page">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Master UI/UX Design for Free</h1>
+                    <h2>Zero Excuses, Just Skills </h2>
+                    <p class="hero-text">Tired of sifting through pricey courses? I dumped everything you need to crush
+                        UI/UX design into one spot <b>100% free.</b> Start with the basics, level up to pro tricks, and
+                        track your progress. Videos, articles, and a shiny progress tracker? Yep, I got you.<BR> Stop
+                        wasting time (and cash)—your dream portfolio starts here.</p>
+                    <div class="cta-buttons">
+                        <button id="landingGetStarted" class="cta-button primary">Get Started</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Chapters Section -->
-            <div id="chaptersSection" class="hidden">
-                <a href="#" class="back-button" id="backToLevels">← Back to Levels</a>
-                <h2 id="levelTitle">Level Chapters</h2>
-                <div class="chapter-list" id="chapterList">
-                    <!-- Chapters will be dynamically added here -->
+            <div class="summary-container">
+                <div class="summary-content">
+                    <h1>3</h1>
+                    <p>Levels</p>
                 </div>
-            </div>
+                <div class="summary-content">
+                    <h1>33</h1>
+                    <p>Chapters</p>
+                </div>
+                <div class="summary-content">
+                    <h1>147</h1>
+                    <p>Videos</p>
+                </div>
+                <div class="summary-content">
+                    <h1>195</h1>
+                    <p>Articles</p>
+                </div>
+                <div class="summary-content">
+                    <h1>342</h1>
+                    <p>Resources</p>
+                </div>
 
-            <!-- Resources Section -->
-            <div id="resourcesSection" class="hidden">
-                <a href="#" class="back-button" id="backToChapters">← Back to Chapters</a>
-                <div class="resource-header">
-                    <h2 id="chapterTitle">Chapter Resources</h2>
-                    <div class="completion-status"></div>
-                </div>
-                
-                <div class="tabs">
-                    <button class="tab active" data-type="video">Videos</button>
-                    <button class="tab" data-type="article">Articles</button>
-                </div>
-                
-                <div class="resource-list" id="resourceList">
-                    <!-- Resources will be dynamically added here -->
-                </div>
             </div>
+            
+
+
         </div>
-    </div>
+        <!-- Auth Section -->
+        <div id="authSection" class="auth-section hidden">
+            <!-- Login Form -->
+            <div id="loginForm" class="auth-container">
+                <h2>Welcome Back</h2>
+                <p>Sign in to continue your learning journey</p>
 
-    <!-- Template for Video Card -->
-    <template id="videoCardTemplate">
-        <div class="resource-card">
-            <div class="video-thumbnail">
-                <img src="" alt="">
-            </div>
-            <div class="resource-content">
-                <h3 class="resource-title"></h3>
-                <p class="resource-description"></p>
-                <div class="resource-meta">
-                    <span class="resource-author"></span>
-                </div>
-                <div class="resource-actions">
-                    <div class="resource-checkbox-wrapper">
-                        <input type="checkbox">
-                        <label>Mark as complete</label>
+                <div class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Enter your email">
                     </div>
-                    <a href="" class="view-link" target="_blank">Watch Video</a>
-                </div>
-            </div>
-        </div>
-    </template>
-
-    <!-- Template for Article Card -->
-    <template id="articleCardTemplate">
-        <div class="resource-card">
-            <div class="article-thumbnail">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-                </svg>
-            </div>
-            <div class="resource-content">
-                <h3 class="resource-title"></h3>
-                <p class="resource-description"></p>
-                <div class="resource-meta">
-                    <span class="resource-author"></span>
-                </div>
-                <div class="resource-actions">
-                    <div class="resource-checkbox-wrapper">
-                        <input type="checkbox" class="checkbox">
-                        <label>Mark as complete</label>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password">
                     </div>
-                    <a href="" class="view-link" target="_blank">Read Article</a>
+                    <div class="auth-error" id="loginError"></div>
+                    <button id="loginBtn" class="auth-button">Login</button>
+                    <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignup">Create Account</a></p>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signupForm" class="auth-container hidden">
+                <h2>Create Account</h2>
+                <p>Join our learning platform</p>
+
+                <div class="auth-form">
+                    <div class="form-group">
+                        <label for="signupUsername">Username</label>
+                        <input type="text" id="signupUsername" placeholder="Choose a username">
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Create a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                    </div>
+                    <div class="auth-error" id="signupError"></div>
+                    <button id="signupBtn" class="auth-button">Create Account</button>
+                    <p class="auth-switch">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
                 </div>
             </div>
         </div>
-    </template>
-    
 
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore-compat.js"></script>
-    
-    <!-- Initialize Firebase -->
-    <script>
-const firebaseConfig = {
-  apiKey: "AIzaSyCySRX5APm5CzmRZpBwEA6yvWixVEpu6Yo",
-  authDomain: "learn-with-shaikh.firebaseapp.com",
-  projectId: "learn-with-shaikh",
-  storageBucket: "learn-with-shaikh.firebasestorage.app",
-  messagingSenderId: "814508590017",
-  appId: "1:814508590017:web:0155313742d10bfd10e540",
-  measurementId: "G-JQY8PM4CFP"
-};
-        
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+
+        <!-- Main Content (Original content) -->
+        <div id="mainContent" class="hidden">
+            <div class="container">
+                <!-- Welcome Section -->
+                <div id="welcomeSection" class="welcome-section">
+                    <h1>Learn UI/UX Design</h1>
+                    <p>A curated collection of free resources to master UI/UX design. Choose your level and start
+                        learning at your own pace.</p>
+
+                    <!-- Levels Section -->
+                    <div id="levelsSection">
+                        <div class="levels-grid">
+                            <div class="level-card" data-level="beginner">
+                                <h3>Beginner</h3>
+                                <p>Start your UI/UX journey here</p>
+                            </div>
+                            <div class="level-card" data-level="intermediate">
+                                <h3>Intermediate</h3>
+                                <p>Enhance your skills</p>
+                            </div>
+                            <div class="level-card" data-level="advanced">
+                                <h3>Advanced</h3>
+                                <p>Master UI/UX design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapters Section -->
+                <div id="chaptersSection" class="hidden">
+                    <a href="#" class="back-button" id="backToLevels">← Back to Levels</a>
+                    <h2 id="levelTitle">Level Chapters</h2>
+                    <p id="level-disc">hello!</p>
+                    <div class="chapter-list" id="chapterList">
+                        <!-- Chapters will be dynamically added here -->
+                    </div>
+                </div>
+
+                <!-- Resources Section -->
+                <div id="resourcesSection" class="hidden">
+                    <a href="#" class="back-button" id="backToChapters">← Back to Chapters</a>
+                    <div class="resource-header">
+                        <h2 id="chapterTitle">Chapter Resources</h2>
+                        <div class="completion-status"></div>
+                    </div>
+
+                    <div class="tabs">
+                        <button class="tab active" data-type="video">Videos</button>
+                        <button class="tab" data-type="article">Articles</button>
+                    </div>
+
+                    <div class="resource-list" id="resourceList">
+                        <!-- Resources will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Template for Video Card -->
+        <template id="videoCardTemplate">
+            <div class="resource-card">
+                <div class="video-thumbnail">
+                    <img src="" alt="">
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title"></h3>
+                    <p class="resource-description"></p>
+                    <div class="resource-meta">
+                        <span class="resource-author"></span>
+                    </div>
+                    <div class="resource-actions">
+                        <div class="resource-checkbox-wrapper">
+                            <input type="checkbox">
+                            <label>Mark as complete</label>
+                        </div>
+                        <a href="" class="view-link" target="_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Template for Article Card -->
+        <template id="articleCardTemplate">
+            <div class="resource-card">
+                <div class="article-thumbnail">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title"></h3>
+                    <p class="resource-description"></p>
+                    <div class="resource-meta">
+                        <span class="resource-author"></span>
+                    </div>
+                    <div class="resource-actions">
+                        <div class="resource-checkbox-wrapper">
+                            <input type="checkbox" class="checkbox">
+                            <label>Mark as complete</label>
+                        </div>
+                        <a href="" class="view-link" target="_blank">Read Article</a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+        <!-- Firebase SDK -->
+        <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore-compat.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyCySRX5APm5CzmRZpBwEA6yvWixVEpu6Yo",
+                authDomain: "learn-with-shaikh.firebaseapp.com",
+                projectId: "learn-with-shaikh",
+                storageBucket: "learn-with-shaikh.firebasestorage.app",
+                messagingSenderId: "814508590017",
+                appId: "1:814508590017:web:0155313742d10bfd10e540",
+                measurementId: "G-JQY8PM4CFP"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="data.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>

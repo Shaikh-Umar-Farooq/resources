@@ -1,6 +1,7 @@
 const courseData = {
     beginner: {
         title: "Beginner Level",
+        desc:"The Beginner Level is perfect if you're just getting into User Experience and User Interface design. Here, you'll find all the basics you need to understand the field and start building your skills.",
         "chapters": [
             {
                 "title": "Introduction to User Experience\n\t\t\t\t\tDesign",
@@ -1001,6 +1002,7 @@ const courseData = {
     },
     intermediate: {
         title: "Intermediate Level",
+        desc:"The Intermediate level is for those who already have a basic grasp of UX/UI and are ready to take things up a notch. Here, we'll dive into user research, information architecture, and prototyping to really sharpen your skills.",
         "chapters": [
             {
               "title": "User Research",
@@ -2128,6 +2130,7 @@ const courseData = {
     },
     advanced: {
         title: "Advanced Level",
+        desc:"In this section, we'll dive into advanced design topics like design systems, design thinking, and even VR/AR. By the time you're done, you'll have the confidence and skills to pursue your dream design job!",
         "chapters": [
     {
       "title": "Accessible Design",
