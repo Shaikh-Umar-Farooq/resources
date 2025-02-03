@@ -104,6 +104,10 @@ p {
     color: rgba(125, 125, 125, 0.6);
     margin-bottom: 1.5rem;
 }
+a{
+    color: #3f3f3f;
+    text-decoration: none;
+}
 
 .tablet-container{
     width: 50%;
@@ -673,9 +677,21 @@ input[type="checkbox"]:checked {
 .back-button:hover {
     color: #37352f;
 }
+.mobile{
+    display: hidden;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .mobile{
+        display: none;
+    }
+    #home{
+        display: hidden !important;
+    }
+    .tablet-container{
+        width: 80%;
+    }
     .hero-content h1 {
         font-size: 36px;
     }
