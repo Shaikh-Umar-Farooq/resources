@@ -109,8 +109,11 @@ a{
     text-decoration: none;
 }
 
+.tablet-outer{
+    margin: 2rem;
+}
 .tablet-container{
-    width: 50%;
+    max-width: 900px;
     border-radius: 26px;
     margin: 0 auto;
 border: 6px solid rgba(63, 63, 63, 0.60);
@@ -677,21 +680,17 @@ input[type="checkbox"]:checked {
 .back-button:hover {
     color: #37352f;
 }
-.mobile{
-    display: hidden;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .mobile{
-        display: none;
+        display:none;
     }
-    #home{
-        display: hidden !important;
-    }
-    .tablet-container{
-        width: 80%;
-    }
+   nav{
+    padding: 10px;
+    padding-top: 30px;
+   }
+
     .hero-content h1 {
         font-size: 36px;
     }
