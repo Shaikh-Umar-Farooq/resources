@@ -14,12 +14,10 @@ logging.basicConfig(
 )
 
 def process_full_name(full_name):
-    """Extract first two words from the full name."""
+    """Extract just the first word from the full name."""
     try:
-        # Split the name by spaces and take first two words
-        name_parts = str(full_name).split()
-        processed_name = ' '.join(name_parts[:2])
-        return processed_name.strip()
+        first_word = str(full_name).split()[0]
+        return first_word.strip()
     except:
         return "Valued Customer"
 
@@ -30,7 +28,7 @@ def send_email(sender_email, sender_password, recipient, subject, body):
         msg['From'] = sender_email
         msg['To'] = recipient
         msg['Subject'] = subject
-        msg.attach(MIMEText(body, 'plain'))
+        msg.attach(MIMEText(body, 'html'))  # Changed to HTML for better formatting
         
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()
@@ -44,25 +42,44 @@ def send_email(sender_email, sender_password, recipient, subject, body):
 
 def main():
     # Email configuration
-    SENDER_EMAIL = "smuf7080@gmail.com"  # Replace with your email
-    SENDER_PASSWORD = "hlii uoqm tpjb zzjo"   # Replace with your app password
-    SUBJECT = "Your Subject Line"
+    SENDER_EMAIL = "smuf7080@gmail.com"
+    SENDER_PASSWORD = "hlii uoqm tpjb zzjo"
+    SUBJECT = "Free Structured UI/UX Learning Platform - Helping Aspiring Designers"
     
-    # Email template
+    # Email template with HTML formatting
     EMAIL_TEMPLATE = """
-    Dear {name},
-    
-    I hope this email finds you well.
-    
-    [Your email content here]
-    
-    Best regards,
-    [Your Name]
+    <html>
+    <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+    <p>Hi {name},</p>
+
+    <p>I'm Umar Shaikh, a self-taught UI/UX designer. I've created a completely free, comprehensive UI/UX learning platform at <a href="https://learnuiux.vercel.app">learnuiux.vercel.app</a> that curates the best YouTube tutorials and articles in a structured, progressive learning path.</p>
+
+    <p><strong>Why this platform exists:</strong><br>
+    When I started learning UI/UX design, I couldn't afford paid courses and spent countless hours searching for quality free content. I've transformed that challenge into a solution - a carefully organized platform that guides learners from basics to advanced concepts, with built-in progress tracking.</p>
+
+    <p><strong>What makes it different:</strong></p>
+    <ul>
+        <li>100% free forever, no hidden charges</li>
+        <li>No ads or data collection</li>
+        <li>Structured chapter-by-chapter learning path</li>
+        <li>Progress tracking system</li>
+        <li>No mandatory email verification (users can stay anonymous)</li>
+        <li>Curated content from trusted sources</li>
+    </ul>
+
+    <p><strong>Would you consider sharing this resource with your audience?</strong> Your support could help countless aspiring designers who face financial barriers in accessing UI/UX education. This is <strong>purely a social initiative</strong> to make design education accessible to everyone.</p>
+
+    <p>Thank you for considering this request. Together, we can help democratize UI/UX design education.</p>
+
+    <p>Best regards,<br>
+    Umar Shaikh</p>
+    </body>
+    </html>
     """
     
     try:
         # Read Excel file
-        df = pd.read_excel('clients.xlsx')  # Replace with your Excel file
+        df = pd.read_excel('ui ux insta influencers1.xlsx')
         
         # Verify required columns exist
         required_columns = ['Public email', 'Full name']

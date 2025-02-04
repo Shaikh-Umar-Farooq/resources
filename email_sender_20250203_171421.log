@@ -1,6 +1,0 @@
-2025-02-03 17:14:21,533 - INFO - Attempting to send email to: smuf7080@gmail.com (Muhammad Ilham)
-2025-02-03 17:14:29,822 - INFO - Successfully sent email to: smuf7080@gmail.com (Muhammad Ilham)
-2025-02-03 17:14:49,824 - INFO - Attempting to send email to: umar@ruskmedia.com (Arezoo Sanaiefar)
-2025-02-03 17:14:58,195 - INFO - Successfully sent email to: umar@ruskmedia.com (Arezoo Sanaiefar)
-2025-02-03 17:15:18,200 - WARNING - Empty email found at row 4
-2025-02-03 17:15:18,201 - INFO - Email sending completed. Successful: 2, Failed: 0
